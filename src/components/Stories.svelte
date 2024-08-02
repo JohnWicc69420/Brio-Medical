@@ -39,6 +39,28 @@ iframe {
     object-fit: contain;
 }
 
+@media (max-width: 1000px){
+    .video{
+    margin: 50px 0px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    height: fit-content;
+    max-height: 250px;
+    width: 80%;
+    overflow: hidden;
+}
+iframe {
+    border: 1px solid black;
+    max-height: 250px;
+    width: 80%;
+    object-fit: contain;
+}
+}
+
     h3 a {
         font-weight: 300;
     }

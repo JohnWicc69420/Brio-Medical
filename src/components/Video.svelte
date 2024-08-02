@@ -78,6 +78,27 @@
   }
   }
 
+  @media (max-width: 700px){
+    .container {
+    top: 25px;
+  }
+
+  .title{
+    font-size: 1.6rem;
+    margin: 5px 0px;
+  }
+
+  .info{
+    text-align: center;
+    font-size: 1rem;
+    padding: 0px 20px;
+  }
+  
+  img {
+    height: 70px;
+  }
+  }
+
 
   .video::before {
     content: '';
