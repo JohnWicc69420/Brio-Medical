@@ -19,10 +19,16 @@
     "rollup-plugin-livereload": "^2.0.0",
     "rollup-plugin-svelte": "^7.1.2",
     "svelte": "^3.55.0",
-    "tailwindcss": "^3.4.7"
+    "tailwindcss": "^3.4.7",
+    "vite-plugin-env-compatible": "^2.0.1"
   },
   "dependencies": {
+    "@google-cloud/dialogflow": "^6.7.0",
     "sirv-cli": "^2.0.0",
-    "svelte-icons-pack": "^3.1.3"
+    "svelte-icons-pack": "^3.1.3",
+    "svelte-routing": "^2.13.0",
+    "svelte-spa-router": "^4.0.1",
+    "three": "^0.167.1",
+    "three-stdlib": "^2.30.5"
   }
 }

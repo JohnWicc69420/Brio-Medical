@@ -1,18 +1,36 @@
 <div class="outer">
-<img src="/images/Brio-Logo-Transparent-Background.png" alt="">
-<div class="inner">
+    <a href="#/"><img src="/images/Brio-Logo-Transparent-Background.png" alt=""></a>
+
+
+    <div class="inner">
+    <a href="#/about">
     <p>About</p>
-    <p>Team <img src="/images/down-arrow.png" alt=""></p>
+    </a>
+    <a href="#/team">    
+        <p>Team <img src="/images/down-arrow.png" alt=""></p>
+    </a>
+    <a href="#/conditions">
     <p>Conditions <img src="/images/down-arrow.png" alt=""></p>
+    </a>
+    <a href="#/treatments">
     <p>Treatments <img src="/images/down-arrow.png" alt=""></p>
+    </a>
+    <a href="#/testimonials">
     <p>Testimonials <img src="/images/down-arrow.png" alt=""></p>
+    </a>
+    <a href="#/resources">
     <p>Resources <img src="/images/down-arrow.png" alt=""></p>
+    </a>
+    <a href="https://briomedicalessentials.com/">
     <p>Store </p>
-    <p>Contact</p>
+    </a>
 </div>
 </div>
 
 <style>
+    a{
+        text-decoration: none;
+    }
     .outer {
         margin-top: 35px;
         display: flex;
