@@ -16,7 +16,7 @@
 <p>Discover how our patients overcame obstacles, managed side effects, and improved their quality of life with our help.</p>
 
 <div class="view">
-    <a href="#/stories" class="view">
+    <a href="#/testimonials" class="view">
     <p class="p2">Stage 4 Success Stories</p>
     <div class="img">
     <img src="/images/right-arrow.png" alt="">
