@@ -14,10 +14,10 @@
 <div class="container">
     <div class="upper">
     <p>
-        <span style="font-size: 20px; color: rgb(206, 0, 0)">Voices of Victory, Hope, & Healing</span>
+        <span style="font-size: 20px; color: #002333">Voices of Victory, Hope, & Healing</span>
     </p>
 <p>
-    <span style="font-size: 30px; color: #013365">Patient Experiences at Brio-Medical</span>
+    <span class="ff" style="font-size: 30px; color: #002333">Patient Experiences at Brio-Medical</span>
 </p>
 <p>
     <span style="font-size: 20px;">
@@ -88,11 +88,11 @@
 
     a{
         text-decoration: none;
-        color: rgb(206, 0, 0);
+        color: #002333;
     }
 
     .upper{
-        width: 50%;
+        width: 70%;
         display: flex;
         align-items: center;
         justify-content: center;

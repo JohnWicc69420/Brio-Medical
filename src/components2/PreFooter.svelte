@@ -1,11 +1,10 @@
 <div class="preFooter">
     <div class="c1">
-        <img src="/images/Brio-Logo-Transparent-Background.png" alt="">
-        <p class="title">Brio-Medical Cancer Clinic</p>
-        <p class="address">11000 N Scottsdale Rd Suite 115
+        <p class="title p1">Brio-Medical Cancer Clinic</p>
+        <p class="address p1">11000 N Scottsdale Rd Suite 115
             Scottsdale, Arizona, USA</p>
-        <p class="ph">+1-480-613-8807</p>
-        <p class="hours">Clinic Hours of Operation</p>
+        <p class="ph p1">+1-480-613-8807</p>
+        <p class="hours p1">Clinic Hours of Operation</p>
         <table>
             <tbody>
                 <tr>
@@ -74,14 +73,78 @@
         <a href="/">Patient Testimonials</a>
         <a href="/">Traveling to Scottsdale, AZ</a>
     </div>
+
+</div>
+
+<div class="footer">
+    <div class="tags">
+        <p>XML Sitemap &nbsp;</p>
+        &vert;
+        <p>&nbsp; HTML Sitemap &nbsp;</p>
+        &vert;
+    
+        <p>&nbsp; Privacy Policy &nbsp;</p>
+        &vert;
+        <p>&nbsp; Terms of Use &nbsp;</p>
+        &vert;
+        <p>&nbsp; Terms &amp; Conditions &nbsp;</p>
+        &vert;
+        <p>&nbsp; DMCA &nbsp;</p>
+        &vert;
+        <p>&nbsp; Impressum &nbsp;</p>
+        &vert;
+        <p>&nbsp; Disclaimer &nbsp;</p>
+        &vert;
+        <p>&nbsp; Cookie Policy &nbsp;</p>
+        &vert;
+        <p>&nbsp; FDA Disclaimer &nbsp;</p>
+        &vert;
+        <p>&nbsp; HIPPA Compliance Policy &nbsp;</p>
+        &vert;
+        <p>&nbsp; Accessibility Policy &nbsp;</p>
+        &vert;
+        <p>&nbsp; AI Disclaimer &nbsp;</p>
+    </div>
+    <p class="cc">Copyright &copy; 2019&#45;2024 &vert; Brio-Medical &vert; All rights reserved</p>
 </div>
 
 <style>
+
+.tags {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            font-size: 1rem;
+            justify-content: center;
+        }
+
+        .footer {
+            background-color: #033850;
+            padding: 20px 20px 6px;
+            color: #f1f1f1;
+            font-weight: 400;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        p{
+            font-size: .9rem;
+            margin: 3px;
+        }
+        .cc{
+            width: 100%;
+            border-top: 1px solid gray;
+            font-size: 1rem;
+            padding: 10px 0px;
+            margin-top: 32px;
+        }
     .preFooter {
         display: flex;
+        margin-top: 40px;
         justify-content: space-between;
         padding: 40px;
-        background-color: #ffffff;
+        background-color: #033850;
+        color: #fff;
     }
 
     @media (max-width: 1000px){
@@ -89,13 +152,6 @@
             flex-direction: column;
             align-items: center;
     }
-    }
-
-
-    img {
-        height: 100px;
-        object-fit: contain;
-        width: fit-content;
     }
 
     .c{
@@ -122,10 +178,14 @@
 
     a{
         text-decoration: none;
-        font-size: 1.2rem;
-        margin: 10px 0px;
-        color: black;
+        font-size: 1rem;
+        margin: 8px 0px;
+        color: rgb(255, 255, 255);
         width: fit-content;
+    }
+    h1{
+        font-weight: 600;
+        color: #fff;
     }
     table {
             width: 100%;
@@ -141,16 +201,16 @@
 
         .title {
             font-size: 1.6rem;
-            color: #1b454b;
+            color: #cbcbcb;
             margin-bottom: 0px;
         }
 
         .hours{
             font-size: 1.6rem;
-            color: #1b454b;
+            color: #cbcbcb;
         }
 
-        p{
+        .p1{
             width: 250px;
         }
 

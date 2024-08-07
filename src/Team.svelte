@@ -123,7 +123,7 @@
 ]
 
     import Banner from "./components/Banner.svelte";
-    let title = 'Meet The team';
+    let title = 'Meet The Team';
     let info = 'Multidisciplinary Team of Integrative Cancer Experts'
     let src = '/images/Brio-Medical-Staff-Group-scaled.jpg' 
     let golden = true
@@ -134,7 +134,7 @@
     <Banner {title} {info} {src} {golden}/>
 
 <div class="team">
-    <h1 class="info">Meet the Brio&#45;Medical Team</h1>
+    <h1 class="info ff">Meet the Brio&#45;Medical Team</h1>
     <div class="images">
         {#each data as card}
         <div class="card">
@@ -152,8 +152,8 @@
 
 .name {
     font-size: 1.1rem;
-    color: rgb(207, 0, 0);
-    font-weight: 200;
+    color: #002333;
+    font-weight: 300;
 }
 .name2 {
     font-size: 1.1rem;
@@ -163,6 +163,7 @@
 }
 .card img{
         height: 230px;
+        border-radius: 12px;
     }
     .card {
         height: fit-content;
@@ -188,7 +189,7 @@
     margin-top: 100px;
     text-align: center;
     font-size: 1.5rem;
-    color: #F8C33B;
+    color: #002333;
   }
   @media (min-width: 1000px){
 

@@ -123,64 +123,28 @@
 ]
 
     import Banner from "./components/Banner.svelte";
+    import AboutSection from './components2/AboutSection.svelte'
     let title = 'About Brio-Medical';
     let info = "Arizona's Premier Integrative Cancer Treatment Center"
     let src = '/images/Brio-Medical-Staff-Group-scaled.jpg' 
-    let golden = true
 
 </script>
 
 <div>
-    <Banner {title} {info} {src} {golden}/>
-    <div class="container">
-        <div class="textContainer">
-    <h1>Welcome To The Brio Family</h1>
-    <p>The mission of Brio-Medical is to fulfill your quest for total health and wellness at our state-of-the-art facility with science-backed natural treatments for the management of cancer, Lyme Disease, and other chronic illness.</p>
-    <p>The caring environment of everyone at the Brio-Medical family is here to help you. Our family here looks forward to joining you and giving you a “Brio-Welcome”.</p>
-    <img src="/images/Brio-Medical-Staff-Group-scaled.jpg" alt="">
-    <p>The philosophy behind the Brio-Care System is the synergistic intersection of alternative and conventional medicine based on the principle that a healthy body does not develop the disease with an intact immune defense system.</p>
-    <p>The Brio-Care System believes each person is unique, and the approach to maintaining and improving health and healing should be holistic, treating the mind, body, and spirit. Our approach seeks to restore and strengthen the biological capacities of the body to renew, repair, and heal, with specific emphasis on the immune system.  Our treatments are designed to “kick start” self-renewal and healing.</p>
-    </div>
+    <Banner {title} {info} {src}/>
+
+    <AboutSection />
     
-    <form class="form" action="/submit" method="post">
-        <img src="/images/Brio-Logo-Transparent-Background.png" alt="">
-        <label for="first-name">Patient First Name:*</label>
-        <input placeholder="First Name" type="text" id="first-name" name="first-name" required>
-      
-        <label for="last-name">Patient Last Name:*</label>
-        <input placeholder="Last Name" type="text" id="last-name" name="last-name" required>
-      
-        <label for="email">Email:*</label>
-        <input placeholder="E-mail" type="email" id="email" name="email" required>
-      
-        <label for="phone">Phone:*</label>
-        <input placeholder="Phone Number" type="tel" id="phone" name="phone" required>
-      
-        <label for="condition">Condition:</label>
-        <input placeholder="What is the primary concern?" type="text" id="condition" name="condition">
-      
-        <label for="how-can-we-help">How Can We Help? (Optional):</label>
-        <textarea placeholder="What is your story" id="how-can-we-help" name="how-can-we-help"></textarea>
-      
-      
-        <button type="submit" class="button1">Submit</button>
-      </form>
-      
-    </div>
     
     <style>
     
         h1{
             line-height: 2.6rem;
-            color: #F8C33B;
+            color: #002333;
         }
-    
-    .textContainer {
-        width: 70%;
-    }
 
     .textContainer img{
-        width: 90%;
+        width: 60%;
         margin: 40px 0px;
     }
     
@@ -250,12 +214,12 @@
     </style>
 
 <div class="team">
-    <h1 class="info">Meet the Brio&#45;Medical Team</h1>
+    <h1 class="info ff">Meet the Brio&#45;Medical Team</h1>
     <div class="images">
         {#each data as card}
         <div class="card">
             <img src={card.img} alt="">
-            <h2 class="name">{card.name}</h2>
+            <h2 class="name ff">{card.name}</h2>
             <h2 class="name2">{card.title}</h2>
         </div>
          
@@ -268,12 +232,12 @@
 
 .name {
     font-size: 1.1rem;
-    color: rgb(207, 0, 0);
-    font-weight: 200;
+    color: #002333;
+    font-weight: 300;
 }
 .name2 {
     font-size: 1.1rem;
-    color: #153439;
+    color: #002333;
     font-weight: 200;
     margin: 0px;
 }
@@ -304,7 +268,7 @@
     margin-top: 100px;
     text-align: center;
     font-size: 1.5rem;
-    color: #F8C33B;
+    color: #002333;
   }
   @media (min-width: 1000px){
 

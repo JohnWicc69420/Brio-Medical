@@ -184,36 +184,40 @@
 </div>
 
 <style>
-
-.golden {
-    color: #F8C33B ;
-    font-size: 2.6rem;
-    line-height: 3.6rem;
-  }
     .treat{
-        padding: 80px 40px;
-        background-color: #F6F6F6;
+        padding: 60px 40px;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
     }
 
-    h1{
+    p{
         text-align: center;
     }
 
+    h1{
+        text-align: center;
+        color: #002333;
+        font-weight: 600;
+    }
+
+    h1{
+        font-size: 3.3rem;
+    }
+
     .card img{
-        height: 200px;
-        width: 100%;
+        height: 190px;
     }
     .card {
         position: relative;
         height: fit-content;
-        width: 356px;
+        width: fit-content;
         margin: 19px;
+        height: 190px;
+        border-radius: 14px;
+        overflow: hidden;
     }
-
     .card::before {
     content: '';
     position: absolute;
@@ -221,36 +225,17 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 52, 105, 0.6); 
+    background-color: rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s ease-in-out;
-    height: 200px;
     z-index: 1;
 }
 
 .card:hover::before {
-    background-color: rgba(248, 195, 59, 1);
+    background-color: rgba(16, 125, 118, 0.6);
 }
 
-.card::after {
-    content: '';
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    width: calc(100% - 60px);
-    height: calc(100% - 60px); 
-    border: 1px solid transparent;
-    box-sizing: border-box; 
-    transition: border-width 0.3s ease-in-out, top 0.3s ease-in-out, left 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out, border 0.3s ease-in-out;
-    z-index: 2;
-}
-
-.card:hover::after {
-    top: 40px;
-    left: 40px;
-    width: calc(100% - 80px);
-    height: calc(100% - 80px); 
-    border: 1px solid white;
-    border-width: 1px;
+.card:hover .title{
+    transform: scale(1.1)
 }
     .title{
         font-size: 1.2rem;
@@ -261,11 +246,13 @@
         margin: 0px auto;
         width: 100%;
         z-index: 10;
+        transition: transform 0.3s ease;
     }
 
     .images{
         width: 100%;
         margin-left: -20px;
+        margin-top: 20px;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -273,4 +260,9 @@
         cursor: pointer;
     }
 
+.golden {
+    color: #002333 ;
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+  }
 </style>

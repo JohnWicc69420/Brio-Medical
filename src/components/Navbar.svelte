@@ -1,29 +1,37 @@
 <div class="outer">
+    <!-- 
     <a href="#/"><img src="/images/Brio-Logo-Transparent-Background.png" alt=""></a>
+    -->
 
 
     <div class="inner">
+    <a href="#/">
+    <p>Home</p>
+    </a>
     <a href="#/about">
     <p>About</p>
     </a>
     <a href="#/team">    
-        <p>Team <img src="/images/down-arrow.png" alt=""></p>
+        <p>Team</p>
     </a>
     <a href="#/conditions">
-    <p>Conditions <img src="/images/down-arrow.png" alt=""></p>
+    <p>Conditions</p>
     </a>
     <a href="#/treatments">
-    <p>Treatments <img src="/images/down-arrow.png" alt=""></p>
+    <p>Treatments</p>
     </a>
     <a href="#/testimonials">
-    <p>Testimonials <img src="/images/down-arrow.png" alt=""></p>
+    <p>Testimonials</p>
     </a>
     <a href="#/resources">
-    <p>Resources <img src="/images/down-arrow.png" alt=""></p>
+    <p>Resources</p>
     </a>
-    <a href="https://briomedicalessentials.com/">
+    <!--
+    <a 
+    href="https://briomedicalessentials.com/">
     <p>Store </p>
     </a>
+    -->
 </div>
 </div>
 
@@ -32,22 +40,17 @@
         text-decoration: none;
     }
     .outer {
-        margin-top: 35px;
+        padding: 30px 40px 0px;
+        background-color: transparent;
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
     }
-    img {
-        text-align: center;
-        max-height: 120px;
-    }
-
     .inner{
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 20px;
+        gap: 30px;
         flex-wrap: wrap; 
         padding: 20px;
        }
@@ -55,12 +58,17 @@
     p {
     display: flex;
     align-items: center;
-    color: rgb(0, 0, 123);
-    font-size: 1.3rem;
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 500;
     gap: 5px;
     position: relative; 
     cursor: pointer;
     margin: 4px;
+    transition: color 0.3s ease-in-out;
+}
+p:hover {
+    color: rgb(0, 235, 211);
 }
 
 p::after {
@@ -69,15 +77,9 @@ p::after {
     bottom: -4px;
     left: 0;
     width: 100%;
-    border-bottom: 2px solid rgb(0, 0, 123);
+    border-bottom: 2px solid rgb(0, 235, 211);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-}
-
-p img {
-    filter: brightness(0) saturate(100%) invert(23%) sepia(100%) saturate(747%) hue-rotate(186deg) brightness(98%) contrast(102%);
-    height: 20px;
-    font-weight: 800;
 }
 
 p:hover::after {

@@ -122,8 +122,9 @@
     <label for="how-can-we-help">How Can We Help? (Optional):</label>
     <textarea placeholder="What is your story" id="how-can-we-help" name="how-can-we-help"></textarea>
   
-  
-    <button type="submit" class="button1">Submit</button>
+  <div class="button1">
+    <button type="submit">Submit</button>
+</div>
   </form>
   
 </div>
@@ -132,34 +133,38 @@
 
     h1{
         line-height: 2.6rem;
-        color: rgb(205, 0, 0);
+        color: #002333;
+        font-family: 'Playfair Display', 'serif';
     }
 
 .textContainer {
-    width: 70%;
+    width: 100%;
 }
 
 textarea {
     font-family: inherit;
     padding: 10px;
     height: 100px;
-    width: 90%;
+    width: 95%;
+    border-radius: 12px;
+    outline: none;
 }
     .form{
-        padding: 25px 25px;
-        margin-left: 50px;
-        width: 400px;
+        margin-top: 50px;
+        padding: 35px;
+        border-radius: 30px;
         display: flex;
         align-items: flex-start;
         gap: 20px;
         flex-direction: column;
-        background-color: #f6f6f6;
+        background-color: #002333;
     }
 
     .form input{
-        width: 90%;
-        padding: 20px 10px;
+        width: 95%;
+        padding: 20px 16px;
         border: 1px solid black;
+        border-radius: 12px;
         outline: none;
         font-family: inherit;
         color: black;
@@ -169,30 +174,29 @@ textarea {
         color: black;
     }
     .form label{
-        color: #013365;
+        color: #f2f2f2;
         font-weight: 800;
         margin-top: 30px;
     }
 
     .form img{
+        text-align: center;
         height: 100px;
-    }
-    .el{
-        display: flex;
-        align-items: start;
-        flex-direction: column;
+        width: 100%;
+        object-fit: contain;
     }
     .container {
-        display: flex;
-        align-items: flex-start;
         margin: 40px;
     }
 h3 {
-    color: rgb(205, 0, 0);
+    color: #002333;
+}
+label{
+    color: #fff;
 }
 a{
     text-decoration: none;
-    color: rgb(205, 0, 0);
+   color: #002333;
 }
 p {
     font-size: .9rem;
@@ -201,5 +205,23 @@ p {
 li{
     font-size: .8rem;
     margin-bottom: 10px;
+}
+
+.button1{
+    margin: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+button{
+    padding: 16px 42px;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #00EBD3;
+
 }
 </style>

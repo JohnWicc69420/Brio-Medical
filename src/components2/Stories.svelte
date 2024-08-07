@@ -1,6 +1,6 @@
 <div class="stories">
-<h3><a href="https://brio-medical.com/testimonials/">Stage 4 Cancer Success Stories</a></h3>
-<h1>Experience the Journey Through Our Patients' Eyes</h1>
+<h3><a class="h3" href="#/testimonials">Stage 4 Cancer Success Stories</a></h3>
+<h1 class="ff">Experience the Journey Through Our Patients' Eyes</h1>
 <p style="text-align: left;"><span style="font-size: 18px;">At Brio&#45;Medical, we believe in the power of patient experiences to inspire, educate, and give hope. Our <a href="https://brio-medical.com/testimonials/" >patient testimonials</a> are more than just stories; they are personal journeys of resilience, courage, and triumph. Here, you'll find heartfelt accounts from individuals who have navigated the challenges of cancer and found support, care, and innovative treatment at Brio-Medical.</span></p>
 
 <div class="video">
@@ -14,11 +14,78 @@
 </div>
 
 <p>Discover how our patients overcame obstacles, managed side effects, and improved their quality of life with our help.</p>
-<h2 class="button1">Stage 4 Success Stories</h2>
+
+<div class="view">
+    <a href="#/stories" class="view">
+    <p class="p2">Stage 4 Success Stories</p>
+    <div class="img">
+    <img src="/images/right-arrow.png" alt="">
+    </div>
+</a>
+    </div>
+
 </div>
 
 <style>
 
+    
+.view{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+        margin-top: 20px;
+        transition: transform 0.3s ease-in;
+        cursor: pointer;
+    }
+
+    .view:hover{
+        transform: scale(1.07);
+    }
+
+    .p2{
+        font-weight: 600;
+        color: #002333;
+    }
+
+    img{
+        height: 12px;
+        width: 18px;
+        object-fit: contain;
+        filter: brightness(0) invert(100%);
+    }
+
+    .img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #00EBD3;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+    }
+        h1, h3{
+        text-align: center;
+        color: #002333;
+        font-weight: 600;
+    }
+
+    h1{
+        margin: 0px;
+        font-size: 2.7rem;
+        padding-bottom: 20px;
+    }
+
+    .h3{
+        color: #002333;
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin: 0px;
+    }
+    a{
+        color: #002333;
+    }
 .video{
     margin: 50px 0px;
     width: 100%;
@@ -28,13 +95,13 @@
     justify-content: center;
     object-fit: contain;
     height: fit-content;
-    max-height: 550px;
+    max-height: 500px;
     width: 80%;
     overflow: hidden;
 }
 iframe {
     border: 1px solid black;
-    max-height: 550px;
+    max-height: 500px;
     width: 80%;
     object-fit: contain;
 }
@@ -67,7 +134,6 @@ iframe {
 
     a{
         text-decoration: none;
-        color: red;
         transition: 0.2s color ease-in;
     }
 
@@ -85,14 +151,5 @@ iframe {
         flex-direction: column;
         align-items: center;
         margin-bottom: 100px;
-    }
-        h2{
-        border-radius: 5px;
-        color: white;
-    }
-    
-    h2:hover{
-        background-color: #F8C33B;
-        color: white;
     }
 </style>

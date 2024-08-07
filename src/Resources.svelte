@@ -49,7 +49,7 @@
         </div>
 
         <div class="p">
-        <h2>{card.title}</h2>
+        <h2 class="ff">{card.title}</h2>
         <p>{card.info}</p>
     </div>
 </div>
@@ -71,10 +71,9 @@
 }
 h1{
     text-align: center;
-    color: #F8C33B;
+    color: #002333;
 }
 .container {
-    background-color: #f6f6f6;
     padding: 40px;
 }
     .cards{
@@ -87,7 +86,7 @@ h1{
     }
 
     h2 {
-        color: rgb(198, 0, 0);
+        color: #002333;
         font-weight: 100;
         line-height: 2rem;
     }
@@ -96,7 +95,7 @@ h1{
     display: flex;
     align-items: center;
     gap: 20px;
-    background-color: #fff;
+    background-color: #f6f6f6;
     padding: 20px;
     width: 500px;
     }
